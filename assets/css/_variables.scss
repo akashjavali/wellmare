@@ -7,6 +7,9 @@ $sub_secondary_color: #d79839;
 $black: #000000;
 $white: #ffffff;
 
+$f_red: #8d1f16;
+$footer_bg: #252525;
+
 $fb_color: #2e64c1;
 $tw_color: #8dc4ea;
 $gp_color: #ff2626;
@@ -83,39 +86,57 @@ $fas_color: #7f8d8d;
 
 //font attach
 @font-face {
-    font-family: 'Roboto-Light';
-    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-family: 'Lato-Light';
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
 }
 
 ;
 
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
 
 ;
 
 @font-face {
-    font-family: 'Roboto-Bold';
-    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
 }
 
 ;
 
 @font-face {
-    font-family: 'Roboto-Medium';
-    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
 }
 
 ;
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+;
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+;
+
 
 
 //font family
-$rl: 'Roboto-Light';
-$rr: 'Roboto-Regular';
-$rb: 'Roboto-Bold';
-$rm: 'Roboto-Medium';
+
+$ll: 'Lato-Light';
+$lr: 'Lato-Regular';
+$lb: 'Lato-Bold';
+$ml: 'Montserrat-Light';
+$mr: 'Montserrat-Regular';
+$mb: 'Montserrat-Bold';
 
 
 // media query

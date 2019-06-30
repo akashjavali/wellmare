@@ -14,10 +14,10 @@
     <meta name="author" content="">
 
     <!-- Title  -->
-    <title>New Project</title>
+    <title>WellMare</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" /> -->
 
 
     <!-- Plugins -->
@@ -37,70 +37,273 @@
 
     <header>
         <!-- Nav -->
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else
-                                here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo" href="#"><img src="assets/imgs/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto social_icons">
+                        <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto right_nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
+
         <!-- Nav ends -->
     </header>
 
 
 
     <main>
-        <section class="" data-scroll-index="0">
-            <div class="container">
-                <article>
+        <section class="hero" id="hero" data-scroll-index="0">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero_slide">
+                            <div class="container">
+                                <div class="hero_content">
+                                    <h2>Hi,</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo sit ipsam
+                                        minima atque vitae dolore ratione impedit cupiditate at inventore doloremque
+                                        cumque
+                                        itaque commodi mollitia nisi nesciunt minus saepe. Lorem ipsum dolor sit amet
+                                        consectetur nesciunt.</p>
+                                </div>
+                                <img src="assets//imgs/down_arrow.png" alt="" class="animated bounce infinite">
+                            </div>
 
-                </article>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero_slide">
+                            <div class="container">
+                                <div class="hero_content">
+                                    <h2>Hi,</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo sit ipsam
+                                        minima atque vitae dolore ratione impedit cupiditate at inventore doloremque
+                                        cumque
+                                        itaque commodi mollitia nisi nesciunt minus saepe. Lorem ipsum dolor sit amet
+                                        consectetur nesciunt.</p>
+                                </div>
+                                <img src="assets//imgs/down_arrow.png" alt="" class="animated bounce infinite">
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero_slide">
+                            <div class="container">
+                                <div class="hero_content">
+                                    <h2>Hi,</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nemo sit ipsam
+                                        minima atque vitae dolore ratione impedit cupiditate at inventore doloremque
+                                        cumque
+                                        itaque commodi mollitia nisi nesciunt minus saepe. Lorem ipsum dolor sit amet
+                                        consectetur nesciunt.</p>
+                                </div>
+                                <img src="assets//imgs/down_arrow.png" alt="" class="animated bounce infinite">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
 
 
 
-        <section class="" data-scroll-index="1">
+        <section class="about" id="about_us" data-scroll-index="1">
             <div class="container">
-                <article>
-
-                </article>
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt sint sapiente architecto cumque
+                    facilis, sequi deserunt libero, adipisci possimus ducimus magnam doloribus, dicta eaque porro
+                    dolorem sit cum voluptas officiis nisi repellat natus laudantium. Quis at eveniet dicta in sunt
+                    ipsam aperiam ratione rerum. Vero voluptates autem numquam minus ea beatae neque, doloribus
+                    exercitationem tenetur mollitia reprehenderit! Repellendus praesentium facilis iure mollitia
+                    asperiores voluptatum veritatis dignissimos ratione et, error expedita unde reprehenderit labore
+                    aspernatur possimus incidunt velit placeat quidem, vel id eum tenetur ea deleniti? Officia ipsa
+                    sapiente quidem dolorem. Eaque eos odio accusamus rem ex distinctio veniam eius dolor? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Totam commodi rerum hic deserunt ea facere, placeat
+                    illo! Maxime odit quos sapiente, voluptatum distinctio ad quas perspiciatis beatae doloribus quo
+                    expedita ab assumenda fuga labore ullam mollitia recusandae doloremque molestias commodi!</p>
             </div>
         </section>
+
+
+        <section class="products" id="products" data-scroll-index="2">
+            <div class="container">
+
+
+                <h2>Prodcuts</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <div class="prod_item item_1">
+                            <h5>Kitchen</h5>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <div class="prod_item item_2">
+                            <h5>Bedroom</h5>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <div class="prod_item item_3">
+                            <h5>Living Room</h5>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <div class="prod_item item_4">
+                            <h5>Bathroom</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="gallery" id="gallery" data-scroll-index="3">
+
+            <h2>Gallery</h2>
+            <!-- Swiper -->
+            <div class="swiper-gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_gallery gallery_1">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_gallery gallery_2">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_gallery gallery_3">
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_gallery gallery_4">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next gallery_next"></div>
+                <div class="swiper-button-prev gallery_prev"></div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
     </main>
 
 
 
-    <footer class="">
+    <footer class="footer" id="contactus">
         <div class="container">
-            <!-- <p>© 2019 <b>Project Name</b>. All Rights Reserved.</p> -->
+            <h2>Contact Us</h2>
+            <div class="contact_us">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                        <div class="map_div">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d64240.236568789325!2d75.24778408627688!3d12.131632881705825!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd4077de20abf7edc!2sWellMare+interiors!5e0!3m2!1sen!2sin!4v1561927442320!5m2!1sen!2sin"
+                                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="contact_right">
+                            <div class="right_content ">
+                                <img src="assets/imgs/placeholder.png" alt="">
+                                <address>
+                                    Wellmare Interiors <br>
+                                    Opst Ms Mall, Nr, Gandhi Park, <br>
+                                    Payyanur, Kerala 670327
+                                </address>
+                            </div>
+                            <div class="right_content mail_info">
+                                <img src="assets/imgs/mail.png" alt="">
+                                <a href="mailto:info@wellmareinteriors.com">info@wellmareinteriors.com</a>
+                            </div>
+                            <div class="right_content phone_info">
+                                <img src="assets/imgs/phone.png" alt="">
+                                <a href="tel:+91 XXX XXX XX">+91 XXX XXX XX</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <nav class="footer_social">
+
+                    <ul class="social_icons">
+                        <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
         </div>
     </footer>
 
