@@ -1,3 +1,12 @@
+/* Nav active  */
+$(document).ready(function () {
+    $('nav a').click(function () {
+        $('a').removeClass("active");
+        $(this).addClass("active");
+    });
+});
+
+
 /* Swiper starts */
 
 var swiper = new Swiper('.swiper-container', {
@@ -103,7 +112,7 @@ $(".nav_gallery").click(function () {
 });
 $(".nav_contact").click(function () {
     $("html, body").animate({
-            scrollTop: $(".contactus").offset().top
+            scrollTop: $(".footer").offset().top
         },
         800
     );

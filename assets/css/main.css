@@ -670,6 +670,10 @@ a:hover {
   padding: 10px 16px !important;
 }
 
+.main_nav .active {
+  border-bottom: 2px solid black;
+}
+
 .change_navColor {
   background: white;
   -webkit-box-shadow: 2px 5px 12px -4px rgba(0, 0, 0, 0.5);
