@@ -37,8 +37,41 @@
 body {
     color: black;
     font-family: $lr;
-    font-size: 14px;
+    font-size: 16px;
+
+    @include max(575px) {
+        font-size: 14px;
+    }
+
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #91211e;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #383838;
+    }
+
+    &::-moz-scrollbar {
+        width: 8px;
+        height: 12px;
+    }
+
+    &::-moz-scrollbar-thumb {
+        background-color: #91211e;
+    }
+
+    &::-moz-scrollbar-track {
+        background-color: #383838;
+    }
 }
+
+
 
 img {
     width: 100%;
@@ -74,6 +107,11 @@ a:hover {
     display: flex;
     align-items: center;
 
+    @include max(991px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
     li {
         display: inline-block;
         margin: 7px;
@@ -105,16 +143,28 @@ a:hover {
 
 /* Nav starts */
 
-nav {
+.main_nav {
+    @include max(991px) {
+        background: white;
+    }
+
     .logo {
         img {
-            width: 250px;
+            width: 230px;
+
+            @include max(575px) {
+                width: 120px;
+            }
         }
     }
 
 
 
     .right_nav {
+        @include max(991px) {
+            text-align: center;
+        }
+
         li {
             a {
                 font-family: $lb;
@@ -123,6 +173,14 @@ nav {
             }
         }
     }
+
+
+}
+
+.change_navColor {
+    background: white;
+    @include box-shadow(2px 5px 12px -4px rgba(0, 0, 0, 0.5));
+    animation: slideInDown 1s both;
 }
 
 
@@ -153,6 +211,25 @@ nav {
             right: 10%;
             bottom: 10%;
 
+            @include max(1200px) {
+                width: 60%;
+                padding: 30px 60px;
+            }
+
+            @include max(991px) {
+                right: 20%;
+            }
+
+            @include max(575px) {
+                bottom: 25%;
+                padding: 30px;
+            }
+
+            @include max(375px) {
+                bottom: 10%;
+                padding: 30px;
+            }
+
             h2 {
                 color: #a5251c;
                 font-size: 60px;
@@ -164,6 +241,10 @@ nav {
                 color: #91211e;
                 font-family: $lb;
                 line-height: 1.2;
+
+                @include max(575px) {
+                    font-size: 16px;
+                }
             }
         }
 
@@ -173,6 +254,10 @@ nav {
             bottom: 5px;
             text-align: center;
             right: 49%;
+
+            @include max(575px) {
+                right: 45%;
+            }
         }
     }
 }
@@ -183,12 +268,20 @@ nav {
 .swiper-container-rtl .swiper-button-prev {
     right: 70px;
     background: url(../imgs/right_arrow.png);
+
+    @include max(575px) {
+        right: 10px;
+    }
 }
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
     left: 70px;
     background: url(../imgs/left_arrow.png);
+
+    @include max(575px) {
+        left: 10px;
+    }
 }
 
 .swiper-button-next,
@@ -232,7 +325,7 @@ nav {
     background: url(../imgs/pattern.jpg);
     width: 100%;
     background-size: cover;
-    padding: 5% 0;
+    padding: 8% 0;
     text-align: center;
     background-attachment: fixed;
 
@@ -254,7 +347,7 @@ nav {
 /* Product start */
 
 .products {
-    padding: 5% 0;
+    padding: 8% 0;
     text-align: center;
     background: url(../imgs/BG-2.jpg);
     background-size: cover;
@@ -289,9 +382,17 @@ nav {
         background-size: cover;
         margin-bottom: 30px;
 
+        @include max(991px) {
+            padding: 12px;
+        }
+
         h5 {
             font-size: 30px;
             color: white;
+
+            @include max(991px) {
+                font-size: 22px;
+            }
         }
     }
 
@@ -306,9 +407,8 @@ nav {
 .gallery {
     position: relative;
     background: url(../imgs/BG-3.jpg);
-    height: 50vh;
     text-align: center;
-    padding: 2% 0;
+    padding: 8% 0;
 
     h2 {
         color: #831c14;
@@ -357,23 +457,30 @@ nav {
 footer {
     background: $footer_bg;
     text-align: center;
-    padding: 3% 0;
+    padding-top: 3%;
 
     h2 {
         color: white;
     }
 
     .contact_us {
+        padding-bottom: 30px;
+
         .map_div {
             border-right: 2px solid $layw4;
             padding-right: 50px;
             height: 100%;
+
+            @include max(767px) {
+                border-right: none;
+                padding-bottom: 30px;
+            }
         }
 
         .contact_right {
             .right_content {
                 display: flex;
-                margin-bottom: 20px;
+                margin-bottom: 25px;
 
                 img {
                     width: 40px;
@@ -387,7 +494,6 @@ footer {
                     color: white;
                     text-align: left;
                     line-height: 1.4;
-                    font-size: 20px;
                 }
             }
 
@@ -405,7 +511,42 @@ footer {
         .footer_social {
             display: flex;
             justify-content: flex-end;
+
+            ul {
+                li {
+                    margin: 1px;
+
+                    a {
+                        background: #252525;
+                        color: white;
+                        border: 1px solid white;
+                    }
+                }
+            }
         }
+
+
+
+    }
+
+    .footer_nav_wrapper {
+        background: #101010;
+        padding: 35px 0;
+        color: white;
+        font-family: $lb;
+        border-bottom: 1px solid #6c6c6c;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .footer_copyright {
+        background: #101010;
+        padding: 35px 0;
+        color: #878787;
 
     }
 
