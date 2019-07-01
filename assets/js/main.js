@@ -1,3 +1,5 @@
+new WOW().init();
+
 /* Nav active  */
 $(document).ready(function () {
     $('nav a').click(function () {
@@ -36,10 +38,10 @@ var swiper = new Swiper('.swiper-gallery', {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,

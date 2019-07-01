@@ -106,27 +106,6 @@ $fas_color: #7f8d8d;
 
 ;
 
-@font-face {
-    font-family: 'Montserrat-Light';
-    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
-}
-
-;
-
-@font-face {
-    font-family: 'Montserrat-Regular';
-    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
-}
-
-;
-
-@font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-}
-
-;
-
 
 
 //font family
@@ -134,9 +113,6 @@ $fas_color: #7f8d8d;
 $ll: 'Lato-Light';
 $lr: 'Lato-Regular';
 $lb: 'Lato-Bold';
-$ml: 'Montserrat-Light';
-$mr: 'Montserrat-Regular';
-$mb: 'Montserrat-Bold';
 
 
 // media query
