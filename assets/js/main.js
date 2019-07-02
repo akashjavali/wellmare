@@ -2,8 +2,8 @@ new WOW().init();
 
 /* Nav active  */
 $(document).ready(function () {
-    $('nav a').click(function () {
-        $('a').removeClass("active");
+    $('nav li a').click(function () {
+        $('li a').removeClass("active");
         $(this).addClass("active");
     });
 });
