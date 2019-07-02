@@ -14,6 +14,7 @@ $(document).ready(function () {
 var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30,
     centeredSlides: true,
+    speed: 600,
     loop: true,
     autoplay: {
         delay: 2500,
@@ -38,6 +39,7 @@ var swiper = new Swiper('.swiper-gallery', {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
+    speed: 600,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
